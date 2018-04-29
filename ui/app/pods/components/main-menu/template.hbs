@@ -1,0 +1,25 @@
+{{#unless indexMenuBoolean}}
+    <div class="menu-title">
+        Menu
+        <button id="side-menu-back" type="button" class="btn main-menu-button" onclick={{action 'closeMenu'}}>Back</button>
+    </div>
+    <hr class="white-horizontal-rule"/>
+{{/unless}}
+<div id="side-menu-entries" class="menu-item" onclick={{action 'navigateToEntries'}}>
+    Entries
+    <div class="menu-item-description">
+        See this year's entries and enter your own scores.
+    </div>
+</div>
+{{!--
+<div id="side-menu-settings" class="menu-item" onclick={{action 'navigateToSettings'}}>
+    Settings
+    <div class="menu-item-description">
+        Set the theme, entry display, etc.
+    </div>
+</div>
+--}}
+<hr class="white-horizontal-rule"/>
+<div id="side-menu-logout" class="menu-item" onclick={{action 'logout'}}>
+    Logout
+</div>

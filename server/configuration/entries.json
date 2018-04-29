@@ -1,0 +1,38 @@
+[
+    {
+        "id" : "1",
+        "type" : "entries",
+        "attributes" : {
+            "country": "Great Britain",
+            "icon": "gb",
+            "image": "https://apex.eurovision.tv/image/9ea26d29e9c685402b4b6ac8e1fa486f?p=participant",
+            "telephone": "(+44)8005360001",
+            "link": "https://eurovision.tv/participant/surie",
+            "order": 1
+        }
+    },
+    {
+        "id" : "2",
+        "type" : "entries",
+        "attributes" : {
+            "country": "France",
+            "icon": "fr",
+            "image": "https://apex.eurovision.tv/image/2156e4ee4ba783342459d128198338b9?p=participant",
+            "telephone": "(+44)8005360002",
+            "link": "https://eurovision.tv/participant/madame-monsieur",
+            "order": 3
+        }
+    },
+    {
+        "id" : "3",
+        "type" : "entries",
+        "attributes" : {
+            "country": "Greece",
+            "icon": "gr",
+            "image": "https://apex.eurovision.tv/image/4b6b764f25cb4ce23efab4ab7fc9f18d?p=participant",
+            "telephone": "(+44)8005360003",
+            "link": "https://eurovision.tv/participant/yianna-terzi",
+            "order": 2
+        }
+    }
+]

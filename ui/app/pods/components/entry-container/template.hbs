@@ -1,0 +1,60 @@
+<div class="entry-header" onclick={{action 'switchExpanded'}}>
+    <div class="entry-header-column">
+        <img src="/images/flags/flags_iso/64/{{entry.icon}}.png" alt="{{entry.icon}}.png">
+    </div>
+    <div class="entry-header-column select-class">
+        <select onchange={{action "selectScore" value="target.value"}} onclick={{action 'stopPropagation'}}>
+            <option class="default-option" disabled selected value>-</option>
+            {{#each entry.range as |scoreChoice|}}
+                <option value={{scoreChoice}} selected={{eq entry.score scoreChoice}}>{{scoreChoice}}</option>
+            {{/each}}
+        </select>
+    </div>
+    {{#if entry.displayResults}}
+        <div class="entry-header-column-result-right">
+            <div class="entry-header-column-description">
+                AVERAGE
+            </div>
+            <div class={{entry.meanClass}}>
+                {{entry.mean}}
+            </div>
+        </div>
+    {{/if}}
+    <div class="clear"></div>
+</div>
+{{#if entry.expanded}}
+    <div class="entry-body" onclick={{action 'switchExpanded'}}>
+        <div class="entry-body-top">
+            <div class="entry-body-image">
+                <img class="entry-image" src={{entry.image}} alt={{entry.image}}>
+            </div>
+            <div class="entry-body-column-details">
+                <table>
+                    {{#entry-container/entry-column name="Country"}}
+                        <div class="entry-body-column-details-href">
+                            <a href={{entry.link}} target="_blank" onclick={{action 'stopPropagation'}}>{{entry.country}}</a>
+                        </div>
+                    {{/entry-container/entry-column}}
+                    {{#entry-container/entry-column name="Order"}}
+                        {{entry.order}}
+                    {{/entry-container/entry-column}}
+                    {{#if entry.displayResults}}
+                        {{#entry-container/entry-column name="Total"}}
+                            {{entry.total}}
+                        {{/entry-container/entry-column}}
+                    {{/if}}
+                    {{#entry-container/entry-column name="Phone"}}
+                        <div class="entry-body-column-details-href">
+                            <a href="tel:{{entry.telephone}}" onclick={{action 'stopPropagation'}}>{{entry.telephone}}</a>
+                        </div>
+                    {{/entry-container/entry-column}}
+                </table>
+            </div>
+        </div>
+        <div class="entry-body-chart">
+            {{#if entry.displayResults}}
+                {{ember-chart type=entry.chartType data=entry.chartData options=entry.chartOptions}}
+            {{/if}}
+        </div>
+    </div>
+{{/if}}

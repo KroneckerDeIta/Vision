@@ -1,0 +1,42 @@
+.main-menu {
+    .menu-margins {
+        margin-top: $medium-padding;
+        margin-left: $medium-padding;
+        margin-right: $medium-padding;
+        margin-bottom: $large-padding;
+    }
+
+    .menu-title {
+        @extend .menu-margins;
+        font-size: $header-font-size;
+
+        .main-menu-button {
+            @extend .menu-button;
+            float: right;
+            top: 50%;
+            transform: translate(0, 25%);
+        }
+    }
+
+    .menu-item {
+        @extend .menu-margins;
+        background-color: $menu-item-background-colour-ocean;
+        font-size: $medium-size;
+        padding: $medium-padding;
+        cursor: pointer;
+        box-shadow: 6px 6px 3px $shadow-colour-ocean;
+
+        .menu-item-description {
+            font-size: $small-size;
+            padding-top: $x-small-padding;
+        }
+    }
+
+    .menu-item:hover {
+        background-color: $menu-item-hover-background-colour-ocean;
+    }
+
+    .menu-item:active {
+        background-color: $menu-item-active-background-colour-ocean;
+    }
+}

@@ -1,0 +1,19 @@
+.side-menu {
+    background-color: $menu-background-colour-ocean;
+}
+
+.application-wrapper {
+    margin: auto;
+    width: 100%;
+    max-width: $vision-logo-width;
+}
+
+.spinning-loader-container {
+    width: 100%;
+    margin-bottom: $large-padding;
+
+    .login-loader {
+        @extend .spinning-loader;
+        margin: auto;
+    }
+}

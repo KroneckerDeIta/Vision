@@ -1,0 +1,44 @@
+/* eslint-env node */
+'use strict';
+
+const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+
+module.exports = function(defaults) {
+  let app = new EmberApp(defaults, {
+      sassOptions: {
+          includePaths: ['app']
+      },
+      fingerprint: {
+          enabled: false
+      },
+      SRI: {
+          enabled: false
+      }
+  });
+
+  // Use `app.import` to add additional libraries to the generated
+  // output files.
+  //
+  // If you need to use different assets in different
+  // environments, specify an object as the first parameter. That
+  // object's keys should be the environment name and the values
+  // should be the asset to use in that environment.
+  //
+  // If the library that you are including contains AMD or ES6
+  // modules that you would like to import into your application
+  // please specify an object with the list of modules as keys
+  // along with the exports of each module as its value.
+
+  // For material icons.
+  app.import('bower_components/bootstrap/dist/css/bootstrap.css');
+  app.import('bower_components/bootstrap/dist/js/bootstrap.js');
+
+  // For websockets.
+  app.import("bower_components/urijs/src/URI.min.js");
+  app.import('bower_components/socket.io-client/dist/socket.io.js');
+
+  // For deep-equal and checking objects are the same.
+  app.import('bower_components/deep-equal/index.js');
+
+  return app.toTree();
+};

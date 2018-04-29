@@ -1,0 +1,41 @@
+.login-box {
+    .login-text-line {
+        text-align: center;
+        font-size: $medium-small-size;
+        margin-bottom: $medium-padding;
+
+        .login-text {
+            color: $text-colour-ocean;
+            cursor: pointer;
+        }
+    }
+
+    .login-form {
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        padding: $medium-padding;
+        padding-top: 0;
+        background: $background-colour-ocean;
+
+        .login-label {
+            margin-top: $medium-padding;
+        }
+
+        .input-field {
+            width: 100%;
+            color: $shadow-colour-ocean;
+        }
+
+        .error-message {
+            color: #ff4d4d;
+            font-size: $medium-size;
+            margin-top: $medium-padding;
+        }
+
+        .login-main-buttons {
+            margin-top: $medium-padding;
+            text-align: right;
+        }
+    }
+}

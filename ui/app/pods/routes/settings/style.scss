@@ -1,0 +1,16 @@
+.settings-container {
+    .side-menu-toggle {
+        float: left;
+        height: $button-height;
+    }
+
+    .settings-header-button {
+        @extend .menu-button;
+        margin-left: $small-padding;
+        float: right;
+    }
+
+    .clear {
+        clear: both;
+    }
+}

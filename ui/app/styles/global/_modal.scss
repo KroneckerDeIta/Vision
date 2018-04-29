@@ -1,0 +1,32 @@
+.modal-dialog {
+     -webkit-border-radius: $modal-border-radius;
+     -moz-border-radius: $modal-border-radius;
+      border-radius: $modal-border-radius;
+ }
+
+.modal-header {
+    background-color: $menu-background-colour-ocean;
+
+    -webkit-border-top-left-radius: $modal-border-radius;
+    -webkit-border-top-right-radius: $modal-border-radius;
+    -moz-border-radius-topleft: $modal-border-radius;
+    -moz-border-radius-topright: $modal-border-radius;
+     border-top-left-radius: $modal-border-radius;
+     border-top-right-radius: $modal-border-radius;
+ }
+
+ .modal-body {
+     background-color: $menu-background-colour-ocean;
+ }
+
+.modal-footer {
+    background-color: $menu-background-colour-ocean;
+    border-top: none;
+
+    -webkit-border-bottom-left-radius: $modal-border-radius;
+    -webkit-border-bottom-right-radius: $modal-border-radius;
+    -moz-border-radius-bottomleft: $modal-border-radius;
+    -moz-border-radius-bottomright: $modal-border-radius;
+     border-bottom-left-radius: $modal-border-radius;
+     border-bottom-right-radius: $modal-border-radius;
+ }

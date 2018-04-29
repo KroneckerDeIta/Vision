@@ -1,0 +1,9 @@
+{
+  "name": "vision",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "socket.io-client": "^2.0.3",
+    "urijs": "^1.18.4",
+    "deep-equal": "0.0.0"
+  }
+}

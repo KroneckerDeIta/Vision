@@ -1,0 +1,53 @@
+@import "ember-side-menu";
+
+// Constants import.
+@import 'app/styles/_constants.scss';
+
+// Global styles.
+@import 'app/styles/global/_buttons.scss';
+@import 'app/styles/global/_modal.scss';
+@import 'app/styles/global/_loaders.scss';
+
+// Import route/controller/component styles.
+@import 'app/styles/pods.scss';
+
+body {
+    font-family: PlayRegular, Verdana, Geneva, Arial, Helvetica, sans-serif;
+    color: $main-font-color;
+    background-color: $main-body-color;
+    cursor: default;
+}
+
+@font-face {
+    font-family: 'PlayRegular';
+    src: url('../fonts/Play/Play-Regular.ttf');
+}
+
+.main-image {
+    text-align: center;
+}
+
+#vision-logo {
+    width: 100%;
+    max-width: $vision-logo-width;
+}
+
+.white-horizontal-rule {
+    border-color: $main-font-color;
+    margin-top: $medium-padding;
+    margin-bottom: $medium-padding;
+}
+
+.light-horizontal-rule {
+    border-color: $light-font-color;
+    margin-top: $medium-padding;
+    margin-bottom: $medium-padding;
+}
+
+footer {
+    color: $main-font-color;
+    font-size: $footer-font-size;
+    font-style: italic;
+    line-height: $footer-font-line-height;
+    text-align: center;
+}

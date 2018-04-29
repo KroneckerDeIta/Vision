@@ -1,0 +1,41 @@
+.material-icons-button {
+    padding-top: 4px;
+    padding-right: 4px;
+    padding-bottom: 0px;
+    padding-left: 4px;
+}
+
+.main-login-button {
+    font-size: $medium-size;
+    background-color: $button-colour-ocean;
+}
+
+.main-login-button:hover {
+    color: $text-colour-ocean;
+}
+
+.menu-button {
+    @extend .material-icons-button;
+    color: $main-body-color;
+    font-size: $medium-size;
+    height: $button-height;
+    padding: $small-padding;
+    background-color: $default-button-colour;
+}
+
+.menu-button:hover {
+    background-color: $main-font-color;
+}
+
+.menu-button:active {
+    background-color: $main-font-color;
+}
+
+.icon-button {
+    @extend .material-icons-button;
+    background-color: $button-colour-ocean;
+}
+
+.icon-button:hover {
+    color: $text-colour-ocean;
+}

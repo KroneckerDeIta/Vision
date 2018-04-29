@@ -1,0 +1,32 @@
+{{#side-menu}}
+    {{main-menu}}
+{{/side-menu}}
+{{content-backdrop}}
+<div class="application-wrapper">
+    <header>
+        <div class="main-image">
+            <img id="vision-logo" src="/images/logo/VisionLogo.jpg" alt="VisionLogo.jpg">
+        </div>
+    </header>
+    {{#if session.isAuthenticated}}
+        {{#if isIndexAndAuthenticated}}
+            {{main-menu indexMenu="true"}}
+        {{else}}
+            {{#if isLoading}}
+                <div class="spinning-loader-container">
+                    <div class="login-loader">
+                    </div>
+                </div>
+            {{/if}}
+        {{/if}}
+        {{outlet}}
+    {{else}}
+        {{user-login}}
+    {{/if}}
+    <hr class="white-horizontal-rule"/>
+    <footer>
+        <p>Flags provided by: <a href="http://www.icondrawer.com">www.icondrawer.com</a></p>
+    </footer>
+</div>
+
+{{modals/information-modal}}

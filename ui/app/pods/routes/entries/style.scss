@@ -1,0 +1,23 @@
+.entries-container {
+    .side-menu-toggle {
+        float: left;
+        height: $button-height;
+    }
+
+    .sort-span {
+        float: right;
+        padding-bottom: $medium-padding;
+
+        .entry-sorting-select {
+            font-size: $medium-size;
+            line-height: $medium-size;
+            color: $main-body-color;
+            height: $button-height;
+            cursor: pointer;
+        }
+    }
+
+    .clear {
+        clear: both;
+    }
+}

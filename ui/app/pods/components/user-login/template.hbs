@@ -1,0 +1,50 @@
+{{#if isRegister}}
+    <div class="login-text-line">
+        Have an account?
+        <span id="login-text-id" class="login-text" onclick={{action 'login'}}>
+            LOGIN
+        </span>
+    </div>
+{{/if}}
+{{#if isLogin}}
+    <div class="login-text-line">
+        Don't have an account?
+        <span id="register-text-id" class="login-text" onclick={{action 'register'}}>
+            REGISTER
+        </span>
+    </div>
+{{/if}}
+<div class="login-form">
+    <form {{action "authenticate" on="submit"}}>
+        <label class="login-label" for="identification">
+            Username
+        </label>
+        <br/>
+        {{input id="username-input-id" value=identification placeholder="Enter Username" class="input-field"}}
+        <br/>
+        <label class="login-label" for="password">
+            Password
+        </label>
+        <br/>
+        {{input id="password-input-id" value=password placeholder="Enter Password" type="password" class="input-field"}}
+        <br/>
+        {{#if isRegister}}
+            <label class="login-label" for="confirmPassword">
+                Confirm Password
+            </label>
+            <br/>
+            {{input id="confirm-password-input-id" value=confirmPassword placeholder="Re-enter Password" type="password" class="input-field"}}
+            <br/>
+        {{/if}}
+        {{#if errorMessage}}
+            <div class="error-message">
+                {{errorMessage}}
+            </div>
+        {{/if}}
+        <div class="login-main-buttons">
+            <button id="login-confirmation-button-id" class="btn main-login-button" {{action 'authenticate'}}>
+                {{loginType}}
+            </button>
+        </div>
+    </form>
+</div>

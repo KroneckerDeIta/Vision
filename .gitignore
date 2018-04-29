@@ -1,0 +1,7 @@
+# Ignore python compiled files.
+*.pyc
+
+# Ignore release directory.
+release
+
+.idea

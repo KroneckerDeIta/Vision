@@ -1,0 +1,17 @@
+<div class="entries-container">
+    {{#side-menu-toggle}}
+        <button id="entries-menu-button" class="btn menu-button">Menu</button>
+    {{/side-menu-toggle}}
+    <div class="sort-span">
+        Sort by
+        <select class="entry-sorting-select" onchange={{action "selectEntrySorting" value="target.value"}}>
+            {{#each sortTypeRange as |sortChoice|}}
+                <option value={{sortChoice}} selected={{eq selectedSort sortChoice}}>{{sortChoice}}</option>
+            {{/each}}
+        </select>
+    </div>
+    <div class="clear"></div>
+    {{#each sortedEntries as |entry|}}
+        {{entry-container entry=entry}}
+    {{/each}}
+</div>
