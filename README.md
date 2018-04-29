@@ -31,27 +31,31 @@ selenium
 ```sudo pip3 install selenium```
 
 geckodriver
-```wget https://github.com/mozilla/geckodriver/releases/download/v0.20.0/geckodriver-v0.20.0-linux64.tar.gz```
-```tar xzvf geckodriver-v0.20.0-linux64.tar.gz```
-```sudo mv geckodriver /usr/bin/```
-```rm geckodriver-v0.20.0-linux64.tar.gz```
+-```wget https://github.com/mozilla/geckodriver/releases/download/v0.20.0/geckodriver-v0.20.0-linux64.tar.gz```
+-```tar xzvf geckodriver-v0.20.0-linux64.tar.gz```
+-```sudo mv geckodriver /usr/bin/```
+-```rm geckodriver-v0.20.0-linux64.tar.gz```
 
 # Building the development and release Docker images
 
 From the top-level directory run:
+
 ```./build.sh```
 
 # Running the Ember and server unit tests and the product tests
 
 From the top-level directory run:
+
 ```./runTests.sh```
 
 # Running the application after running build.sh
 
 First create the directory the database will be stored in on the host:
+
 ```mkdir -p /var/data```
 
 From the top-level directory run:
+
 ```./run.sh```
 
 Then open a web browser and navigate to "localhost"
