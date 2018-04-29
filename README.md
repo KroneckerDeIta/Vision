@@ -10,13 +10,13 @@ Whilst the UI has been written in Ember it is only meant to be run locally, and 
 
 # Development setup
 
-Dependencies:
+## Dependencies:
 
-# To build the release:
+### To build the release:
 docker
 ```https://docs.docker.com/install/```
 
-# To run the tests:
+### To run the tests:
 
 python3
 ```sudo apt-get install python3```
