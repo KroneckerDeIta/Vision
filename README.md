@@ -48,4 +48,4 @@ Note: tested on the latest versions of Firefox, Chrome, Opera and Safari.
 
 # Packaging the application after running build.sh
 
-./package.sh <year of contest>
+./package.sh ```<year of contest>```
