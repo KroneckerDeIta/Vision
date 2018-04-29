@@ -31,10 +31,10 @@ selenium
 ```sudo pip3 install selenium```
 
 geckodriver
--```wget https://github.com/mozilla/geckodriver/releases/download/v0.20.0/geckodriver-v0.20.0-linux64.tar.gz```
--```tar xzvf geckodriver-v0.20.0-linux64.tar.gz```
--```sudo mv geckodriver /usr/bin/```
--```rm geckodriver-v0.20.0-linux64.tar.gz```
+- ```wget https://github.com/mozilla/geckodriver/releases/download/v0.20.0/geckodriver-v0.20.0-linux64.tar.gz```
+- ```tar xzvf geckodriver-v0.20.0-linux64.tar.gz```
+- ```sudo mv geckodriver /usr/bin/```
+- ```rm geckodriver-v0.20.0-linux64.tar.gz```
 
 # Building the development and release Docker images
 
