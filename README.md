@@ -1,6 +1,4 @@
-####################################################################################################
 # General information
-####################################################################################################
 
 This is a score entry application for your favourite song contest, one which features countries in Europe and beyond.
 
@@ -10,9 +8,7 @@ All the information about entries are to be set in the entries.json file, and wh
 
 Whilst the UI has been written in Ember it is only meant to be run locally, and runs from a Docker container.
 
-####################################################################################################
 # Development setup
-####################################################################################################
 
 Dependencies:
 
@@ -29,23 +25,17 @@ geckodriver (wget https://github.com/mozilla/geckodriver/releases/download/v0.20
              sudo mv geckodriver /usr/bin/
              rm geckodriver-v0.20.0-linux64.tar.gz)
 
-####################################################################################################
 # Building the development and release Docker images
-####################################################################################################
 
 From the top-level directory run:
 ./build.sh
 
-####################################################################################################
 # Running the Ember and server unit tests and the product tests
-####################################################################################################
 
 From the top-level directory run:
 ./runTests.sh
 
-####################################################################################################
 # Running the application after running build.sh
-####################################################################################################
 
 First create the directory the database will be stored in on the host:
 mkdir -p /var/data
@@ -56,8 +46,6 @@ From the top-level directory run:
 Then open a web browser and navigate to "localhost"
 Note: tested on the latest versions of Firefox, Chrome, Opera and Safari.
 
-####################################################################################################
 # Packaging the application after running build.sh
-####################################################################################################
 
-./package.sh
+./package.sh <year of contest>
